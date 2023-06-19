@@ -1,0 +1,223 @@
+how is the code running----
+complilation 
+(included in java develpoment kit) 
+the converted into Byte code.class
+then execution
+byte code.class java develpoment kit then it is converted into native code then it execute 
+
+
+PRINT OF A FUNCTION ----
+
+System.out.print("Hello World");
+        //output of a function//
+        
+        //print with a line gap//
+system.out.println("__");
+         or 
+system.out.print("__\n");
+
+\n is used to print in next line
+
+
+
+VARIABLES IN A CODE----
+  String name="tony shark";
+  int a=25;
+  int b=39;
+  double price=37.38;
+
+Size of byte=1 byte(8bites)
+char=2byte
+int=4byte
+long=8byte
+float=4byte
+double=8byte
+
+INPUT OF A FUNCTION---
+import java.util.*;
+scanner sc= new Scanner(System.in);
+int a= sc.nextInt();
+String b= sc.next();     --- it will input the first Word 
+String c = sc.nextline();   --- it will take the whole line as input 
+sc.nextFloat();   --- take float 
+
+
+CONDITIONAL VARIABLES---
+
+IF ELSE TYPE----
+if(){
+
+}
+else if(){
+
+}
+else{
+
+}
+
+SWITCH TYPE---
+
+switch (button) {
+  case 1:
+    break;
+
+  default:
+    break;
+}
+
+LOOPS----
+
+for loop ---
+
+for(initilisation;condition;updation){
+  //do something
+}
+
+while(condition){
+  //dp something
+}
+
+do{
+  //do something
+}while(condition);
+
+in do while atleast one time work is done no matter the condition is true or not
+
+System.out.println("");  --- is used to make a line break
+
+FUNCTIONS---
+
+returnType functionName( type arg1,type arg2 ){
+  //operations
+}
+int float String void-- return type
+public static ---oops 
+int float string boolean -- type of arg
+
+all functions are stored in form of stack  in java
+more functions more memory fill 
+
+TIME AND SPACE COMPLEXITY---
+time--
+best case-omega(1)
+
+average case-  theta of (n+1/2)
+ 
+worst case- O(n)
+
+dynamic programming is used to optimize time complexity
+space--
+1 space is used by string in main  function static public wala
+and baki n and all variables that we introduce
+
+ARRAYS---
+type[]arrayName=new type[size];
+Zero indexed
+after writing the above line the memory is reserved as according to the sixe of the input the memory is defined in the linear way
+
+if we dont give the value to the array then in java it is automatically store 0 for int 
+0.0 float
+false for boolean
+""for string
+
+in cpp it stores garbage value that is of no use
+
+arrayname.length--- gives the size
+Integer.MAX_VALUE--- max value in java used to update the value
+Integer.MIN_VALUE;--- min value in java use to update the value  
+
+2D ARRAYS--
+matrix type (rows-down * columns-right)
+
+type[][] arrayName = new type[rows][columns];
+
+
+STRING--
+String name=__;
+
+from user
+Scanner sc=new Scanner(System.in);
+string name= sc.next();      one word allowed
+from many words 
+string name=sc.nextline();
+
+name.length();  --- gives the length of the string
+
+charAt function is used to use string as a type of array
+it is used at s1.charAt(index);
+
+how to compare 2 strings
+s1>s2 : positive value
+s1==s2: zero
+s1<s2:  negative value
+
+character a is value is less tha the character b value
+a<b
+
+s1.compareTo.(s2) is used to compare
+== is also correct in many cases but it sometimes fail so .compareTo function is used
+new String=("__")---- it is used to define a new string at a time
+
+how to get a substring 
+string name = sentence.substring(begin index,end index[not included]);
+if we dont put any end index then it takes last index automatically
+
+Strings are immutable they cant be changed once stored in memory it cant be modified
+because the code is stored in stack and heap everything we modify it becomes at new location in heap and then the stack pointer points at new location
+
+Reverse string
+for half string first index is replaced by end character
+
+
+
+STRING BUILDER----
+not immutable
+StringBuilder name = new StringBuilder("Tony");
+s1.charAt(index);
+s1.setCharAt(index,Value);
+s1.insert(index,value);    ---insert new char
+s1.delete(start index,end index[not included]);
+s1.append(value); add a char at last
+s1.length(); gives length of string
+
+OPERATORS----
++ - * /
+% Remainder
+  
+&& Logical And
+|| Logical Or
+!  Not
+
+bit wise OPERATORS
+& and
+| or
+^ xor 00 ya 11 pe 0   01 ya 10 pe 1
+~ complement
+<< binary left shift
+>> binary right shift
+
+Bit manipulation
+<< binary left shift N<<i
+>> binary right shift N>>i
+
+Get bit---
+1<<i
+AND
+
+Set bit---
+1<<i
+Or
+
+Clear bit--
+1<<i
+And with Not
+
+Update bit--
+for 0
+1<<i       indirectly set operation
+Or 
+
+for 1
+1<<i       indirectly clear operation
+And with Not
+
